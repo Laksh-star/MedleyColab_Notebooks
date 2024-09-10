@@ -18,3 +18,4 @@
 ---
 
 Generated using ChatGPT-4o
+![Alt text](process_w_napkin-ai.png)
