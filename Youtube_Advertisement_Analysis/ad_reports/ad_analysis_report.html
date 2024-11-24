@@ -1,0 +1,114 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Ad Campaign Analysis Report</title>
+            <style>
+                body { font-family: Arial, sans-serif; margin: 40px; }
+                .container { max-width: 1200px; margin: 0 auto; }
+                .section { margin-bottom: 40px; }
+                .stat-box { 
+                    background: #f5f5f5; 
+                    padding: 20px; 
+                    border-radius: 5px;
+                    margin-bottom: 20px;
+                }
+                .flex-container { 
+                    display: flex; 
+                    flex-wrap: wrap; 
+                    gap: 20px; 
+                }
+                .stat-item { 
+                    flex: 1; 
+                    min-width: 200px; 
+                    background: white;
+                    padding: 15px;
+                    border-radius: 5px;
+                    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                }
+                table { 
+                    width: 100%; 
+                    border-collapse: collapse; 
+                    margin-top: 20px;
+                }
+                th, td { 
+                    padding: 12px; 
+                    border: 1px solid #ddd; 
+                    text-align: left; 
+                }
+                th { background: #f5f5f5; }
+                h1, h2 { color: #333; }
+                .chart-container { margin: 20px 0; height: 600px; }
+                iframe { border: none; width: 100%; height: 100%; }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <h1>Ad Campaign Analysis Report</h1>
+                <p>Report generated on: 2024-11-24 01:35:43</p>
+                
+                <div class="section">
+                    <h2>Summary Statistics</h2>
+                    <div class="flex-container">
+                        <div class="stat-item">
+                            <h3>Total Ads Detected</h3>
+                            <p>14</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>Unique Companies</h3>
+                            <p>7</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>Videos Analyzed</h3>
+                            <p>4</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>Unique Offers</h3>
+                            <p>9</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="section">
+                    <h2>Most Common Offers</h2>
+                    <table>
+                        <tr>
+                            <th>Offer</th>
+                            <th>Frequency</th>
+                        </tr>
+                        <tr><td>10% CASH BACK</td><td>5</td></tr><tr><td>0 DOWN PAYMENT</td><td>5</td></tr><tr><td>ASSURED GIFT ON MOBILE PURCHASE</td><td>5</td></tr><tr><td>Less Expense More Saving</td><td>2</td></tr><tr><td>GET FREE 10 YEARS</td><td>1</td></tr><tr><td>Get Free 10 Years Service</td><td>1</td></tr><tr><td>Advertisement appears to be a banner/strip for clothing retail</td><td>1</td></tr><tr><td>Shows glimpses of traditional and casual wear displays</td><td>1</td></tr><tr><td>The bottom strip appears to be a composite promotional banner showing repeated branding elements</td><td>1</td></tr>
+                    </table>
+                </div>
+            
+                <div class="section">
+                    <h2>Company Analysis</h2>
+                    <table>
+                        <tr>
+                            <th>Company</th>
+                            <th>Unique Offers</th>
+                        </tr>
+                        <tr><td>BIG C</td><td>3</td></tr><tr><td>Kamani Evm Factory Outlet</td><td>2</td></tr><tr><td>Koman Evolution Factory Outlet</td><td>2</td></tr><tr><td>Seematti & South India Shopping Mall</td><td>0</td></tr><tr><td>South India Jewellers</td><td>1</td></tr><tr><td>South India Jewels</td><td>0</td></tr><tr><td>South India Shopping Mall</td><td>2</td></tr>
+                    </table>
+                </div>
+            
+                <div class="section">
+                    <h2>Visualizations</h2>
+                    <div class="chart-container">
+                        <iframe src="company_frequency.html"></iframe>
+                    </div>
+        
+                    <div class="chart-container">
+                        <iframe src="offer_distribution.html"></iframe>
+                    </div>
+            
+                    <div class="chart-container">
+                        <iframe src="ad_timeline.html"></iframe>
+                    </div>
+                    <div class="chart-container">
+                        <iframe src="ad_heatmap.html"></iframe>
+                    </div>
+                </div>
+            </div>
+        </body>
+        </html>
+        
