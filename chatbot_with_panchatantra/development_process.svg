@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .title { font: bold 24px sans-serif; }
+        .phase { font: bold 16px sans-serif; }
+        .detail { font: 14px sans-serif; }
+        .arrow { stroke: #666; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+        .box { fill: #f8f9fa; stroke: #dee2e6; stroke-width: 2; rx: 10; }
+        .highlight { fill: #FF4B4B; }
+    </style>
+    
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+        </marker>
+    </defs>
+
+    <text x="400" y="40" text-anchor="middle" class="title">Leadership Chatbot Development Process</text>
+
+    <!-- Phase 1: Initial Setup -->
+    <rect x="50" y="80" width="200" height="100" class="box"/>
+    <text x="150" y="100" text-anchor="middle" class="phase">Phase 1: Initial Setup</text>
+    <text x="60" y="120" class="detail">• Core chatbot functionality</text>
+    <text x="60" y="140" class="detail">• Panchatantra database</text>
+    <text x="60" y="160" class="detail">• Basic UI components</text>
+
+    <!-- Phase 2: UI Navigation -->
+    <rect x="300" y="80" width="200" height="100" class="box"/>
+    <text x="400" y="100" text-anchor="middle" class="phase">Phase 2: UI Navigation</text>
+    <text x="310" y="120" class="detail">• Sidebar history</text>
+    <text x="310" y="140" class="detail">• Navigation system</text>
+    <text x="310" y="160" class="detail">• View switching</text>
+
+    <!-- Phase 3: Data Persistence -->
+    <rect x="550" y="80" width="200" height="100" class="box"/>
+    <text x="650" y="100" text-anchor="middle" class="phase">Phase 3: Persistence</text>
+    <text x="560" y="120" class="detail">• SQLite integration</text>
+    <text x="560" y="140" class="detail">• Database operations</text>
+    <text x="560" y="160" class="detail">• Data management</text>
+
+    <!-- Phase 4: UI Enhancement -->
+    <rect x="50" y="230" width="200" height="100" class="box"/>
+    <text x="150" y="250" text-anchor="middle" class="phase">Phase 4: UI Enhancement</text>
+    <text x="60" y="270" class="detail">• Modern design</text>
+    <text x="60" y="290" class="detail">• CSV export</text>
+    <text x="60" y="310" class="detail">• Improved UX</text>
+
+    <!-- Phase 5: Documentation -->
+    <rect x="300" y="230" width="200" height="100" class="box"/>
+    <text x="400" y="250" text-anchor="middle" class="phase">Phase 5: Documentation</text>
+    <text x="310" y="270" class="detail">• README.md</text>
+    <text x="310" y="290" class="detail">• Work report</text>
+    <text x="310" y="310" class="detail">• License & requirements</text>
+
+    <!-- Interaction Flow -->
+    <g transform="translate(50, 400)">
+        <rect x="0" y="0" width="700" height="150" class="box" fill="#f1f3f5"/>
+        <text x="350" y="30" text-anchor="middle" class="phase">Development Interaction Flow</text>
+        
+        <rect x="50" y="50" width="120" height="40" rx="20" class="box highlight" fill-opacity="0.2"/>
+        <text x="110" y="75" text-anchor="middle" class="detail">User Request</text>
+        
+        <rect x="290" y="50" width="120" height="40" rx="20" class="box highlight" fill-opacity="0.2"/>
+        <text x="350" y="75" text-anchor="middle" class="detail">AI Analysis</text>
+        
+        <rect x="530" y="50" width="120" height="40" rx="20" class="box highlight" fill-opacity="0.2"/>
+        <text x="590" y="75" text-anchor="middle" class="detail">Implementation</text>
+        
+        <path d="M170 70 H290" class="arrow"/>
+        <path d="M410 70 H530" class="arrow"/>
+        <path d="M590 90 C590,120 110,120 110,90" class="arrow"/>
+    </g>
+
+    <!-- Phase Connections -->
+    <path d="M250 130 H300" class="arrow"/>
+    <path d="M500 130 H550" class="arrow"/>
+    <path d="M650 180 C650,200 150,200 150,230" class="arrow"/>
+    <path d="M250 280 H300" class="arrow"/>
+</svg>

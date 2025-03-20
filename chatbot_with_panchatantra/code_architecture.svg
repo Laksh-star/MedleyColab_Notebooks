@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="800" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .title { font: bold 24px sans-serif; }
+        .module { font: bold 18px sans-serif; }
+        .component { font: 14px sans-serif; }
+        .description { font: italic 12px sans-serif; fill: #666; }
+        .arrow { stroke: #666; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+        .box { fill: #f8f9fa; stroke: #dee2e6; stroke-width: 2; rx: 10; }
+        .data { fill: #e9ecef; }
+        .ui { fill: #fff3bf; }
+        .core { fill: #d3f9d8; }
+        .db { fill: #e3fafc; }
+    </style>
+    
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+        </marker>
+    </defs>
+
+    <text x="400" y="40" text-anchor="middle" class="title">Leadership Chatbot Architecture</text>
+
+    <!-- Core Application (app.py) -->
+    <rect x="250" y="80" width="300" height="200" class="box core"/>
+    <text x="400" y="110" text-anchor="middle" class="module">app.py (Core Application)</text>
+    <text x="270" y="140" class="component">• Streamlit UI Components</text>
+    <text x="270" y="160" class="component">• Leadership Advice Logic</text>
+    <text x="270" y="180" class="component">• Story Matching Engine</text>
+    <text x="270" y="200" class="component">• Concept Tagging System</text>
+    <text x="270" y="220" class="description">Main application orchestrator</text>
+
+    <!-- Database Module (db.py) -->
+    <rect x="50" y="350" width="250" height="150" class="box db"/>
+    <text x="175" y="380" text-anchor="middle" class="module">db.py (Database Layer)</text>
+    <text x="70" y="410" class="component">• SQLite Connection Management</text>
+    <text x="70" y="430" class="component">• Chat History Operations</text>
+    <text x="70" y="450" class="component">• Data Export Functions</text>
+    <text x="70" y="470" class="description">Handles data persistence</text>
+
+    <!-- UI Components -->
+    <rect x="500" y="350" width="250" height="150" class="box ui"/>
+    <text x="625" y="380" text-anchor="middle" class="module">UI Components</text>
+    <text x="520" y="410" class="component">• Chat Interface</text>
+    <text x="520" y="430" class="component">• History View</text>
+    <text x="520" y="450" class="component">• Navigation System</text>
+    <text x="520" y="470" class="description">User interaction elements</text>
+
+    <!-- Data Store -->
+    <rect x="250" y="550" width="300" height="180" class="box data"/>
+    <text x="400" y="580" text-anchor="middle" class="module">Data Layer</text>
+    <g transform="translate(270, 600)">
+        <text x="0" y="0" class="component">Leadership Stories DB:</text>
+        <text x="20" y="20" class="component">• Decision Making</text>
+        <text x="20" y="40" class="component">• Teamwork</text>
+        <text x="20" y="60" class="component">• Trust & Strategy</text>
+        <text x="20" y="80" class="component">• Communication</text>
+        <text x="20" y="100" class="component">• Conflict Resolution</text>
+    </g>
+
+    <!-- Data Flow Arrows -->
+    <path d="M400 280 L175 350" class="arrow"/>
+    <path d="M400 280 L625 350" class="arrow"/>
+    <path d="M175 500 L400 550" class="arrow"/>
+    <path d="M625 500 L400 550" class="arrow"/>
+    
+    <!-- Bidirectional Arrows -->
+    <path d="M625 425 L475 425" class="arrow"/>
+    <path d="M325 425 L475 425" class="arrow" transform="scale(-1, 1) translate(-950, 0)"/>
+
+    <!-- External Files -->
+    <g transform="translate(50, 150)">
+        <rect x="0" y="0" width="150" height="100" class="box"/>
+        <text x="75" y="25" text-anchor="middle" class="module">Config Files</text>
+        <text x="10" y="50" class="component">• requirements.txt</text>
+        <text x="10" y="70" class="component">• .env</text>
+        <text x="10" y="90" class="description">Dependencies & Config</text>
+    </g>
+
+    <!-- Documentation -->
+    <g transform="translate(600, 150)">
+        <rect x="0" y="0" width="150" height="100" class="box"/>
+        <text x="75" y="25" text-anchor="middle" class="module">Documentation</text>
+        <text x="10" y="50" class="component">• README.md</text>
+        <text x="10" y="70" class="component">• work_report.md</text>
+        <text x="10" y="90" class="description">Project docs</text>
+    </g>
+</svg>
